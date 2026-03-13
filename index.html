@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="version" content="1.0.3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="version" content="1.0.3">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Pokemon Game</title>
 
-    <title>Pokemon Game</title>
+        <link rel="icon" href="assets/icon_192.png" type="image/png" />
+        <link rel="stylesheet" href="style.css?v=1.0.3" />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="style.css?v=1.0.3" />
+        <script defer src="game.js?v=1.0.3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    </head>
+    <body>
+        <div id="game"></div>
 
-    <script defer src="game.js?v=1.0.3"></script>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
-</head>
-
-<body>
-    <div id="game"></div>
-
-    <!-- Pokemon Catch Popup -->
-    <div id="pokemon-popup" class="popup">
-        <div id="popup-content" class="popup-content">
-            <h2 id="popup-title">A wild Pokemon appeared!</h2>
-            <img id="pokemon-sprite" src="assets/pokemon/0.png" alt="Pokemon Sprite">
-            <div class="popup-buttons">
-                <button id="catch-btn">Catch</button>
-                <button id="run-btn">Run</button>
+        <!-- Pokemon Catch Popup -->
+        <div id="pokemon-popup" class="popup">
+            <div id="popup-content" class="popup-content">
+                <h2 id="popup-title">A wild Pokemon appeared!</h2>
+                <img id="pokemon-sprite" src="assets/pokemon/0.png" alt="Pokemon Sprite">
+                <div class="popup-buttons">
+                    <button id="catch-btn">Catch</button>
+                    <button id="run-btn">Run</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="controls">
-        <button id="up" class="arrow-button">↑</button>
-        <div class="middle-row">
-            <button id="left" class="arrow-button">←</button>
-            <button id="down" class="arrow-button">↓</button>
-            <button id="right" class="arrow-button">→</button>
+        <!-- Mobile Controls -->
+        <div id="controls">
+            <button id="up" class="arrow-button">↑</button>
+            <div class="middle-row">
+                <button id="left" class="arrow-button">←</button>
+                <button id="down" class="arrow-button">↓</button>
+                <button id="right" class="arrow-button">→</button>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
